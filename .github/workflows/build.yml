@@ -20,4 +20,4 @@ jobs:
     - uses: actions/upload-artifact@v3
       with:
         name: Image
-        path: ./ORANGEPI3B_EFI.img.gz
+        path: /home/runner/work/quartz64_uefi/quartz64_uefi/ORANGEPI3B_EFI.img
