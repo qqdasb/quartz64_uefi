@@ -6,7 +6,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v4
       with:
         fetch-depth: 0
     - name: Install toolchain
@@ -17,7 +17,7 @@ jobs:
       run: |
         make sdcard -j$(nproc)
     
-    - uses: actions/upload-artifact@v3
+    - uses: actions/upload-artifact@v4
       with:
         name: Image
         path: /home/runner/work/quartz64_uefi/quartz64_uefi/ORANGEPI3B_EFI.img
